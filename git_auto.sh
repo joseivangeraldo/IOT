@@ -19,8 +19,7 @@ NOW=$(date +'%d-%m-%Y %H:%M:%S')
 git add .
 sleep 3
 
-echo "Digite a Mensagem do Comit"
-read -p "Digite sua Mensagem de Commit: " mensagem
+read -p "Digite sua Mensagem de Commitada: " mensagem
 
 # add comentarios : Noinicio vem a data, após pode-se mudar a descrição para uma da sua escolha
 git commit -m "'$mensagem '$NOW"
