@@ -19,7 +19,21 @@ NOW=$(date +'%d-%m-%Y %H:%M:%S')
 git add .
 sleep 3
 
+echo "Digite a Mensagem do Comit"
+read -p "Digite sua Mensagem de Commit: " mensagem
+
 # add comentarios : Noinicio vem a data, após pode-se mudar a descrição para uma da sua escolha
-git commit -m "'Alterado em '$NOW"
+git commit -m "'$mensagem '$NOW"
 sleep 3
 git push
+
+#!/bin/bash
+
+# Pergunta o nome e salva na variável 'nome'
+#   read -p "Digite seu nome: " nome
+#   echo "Olá, $nome!"
+
+# Pergunta a idade ocultando a digitação (ideal para senhas) usando -s
+#   read -s -p "Digite sua senha: " senha
+#   echo
+#   echo "Senha cadastrada com sucesso."
